@@ -7,20 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+        $(window).on('load', function () {
+            if ($(window).width() < 600) {       // if width is less than 600px
+                alert("Phone!");
+            }
+            else {                              // if width is more than 600px
+                alert("Desktop!");
+            }
+        });
+	</script>
 </head>
 <body>
 
     <div class="container" style="white-space: pre;">
         <span style="display: block;">
-            <span>Almost heaven, West Virginia</span>
-            <span>Blue Ridge Mountains, Shenandoah River</span>
-            <span>Life is old there, older than the trees</span>
-            <span>Younger than the mountains, growin' like a breeze</span>
-            <span></span>
-            <span>Almost heaven, West Virginia</span>
-            <span>Blue Ridge Mountains, Shenandoah River</span>
-            <span>Life is old there, older than the trees</span>
-            <span>Younger than the mountains, growin' like a breeze</span>
+Almost heaven, West Virginia
+Blue Ridge Mountains, Shenandoah River
+Life is old there, older than the trees
+Younger than the mountains, growin' like a breeze
+
+Almost heaven, West Virginia
+Blue Ridge Mountains, Shenandoah River
+Life is old there, older than the trees
+Younger than the mountains, growin' like a breeze
         </span>
     </div>
 
