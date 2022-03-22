@@ -10,10 +10,21 @@
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script>
         $(window).on('load', function () {
+
+            var numOfSpacesInEachRow = 4*3;
+            var lyric = $( "p" ).first().text();
+            var rows = lyric.split("\n");
+            var formatted_lyrics = "";
+            for (let i = 0; i < rows.length; ++i) {
+                formatted_lyrics += rows[i].slice(numOfSpacesInEachRow) + "\n";
+            }
+            $("p").first().html(formatted_lyrics);
+
             if ($(window).width() < 600) {       
             } else {                              
-                $("p").css("font-size", "1.5vw");
+                $("p").css("font-size", "1vw");
             }
+
         });
 	</script>
 </head>
@@ -21,12 +32,45 @@
 
     <div class="container-fluid" style="display: inline-block;">
         <p style="white-space: pre; font-size: 4vw;">
-Almost heaven, West Virginia
-Almost heaven, West Virginia
-Almost heaven, West Virginia
-Almost heaven, West Virginia
-Almost heavendasdsadsadsadadas, West Virginia
-Almost heaven, West Virginia
+
+            Almost heaven, West Virginia
+            Blue Ridge Mountains, Shenandoah River
+            Life is old there, older than the trees
+            Younger than the mountains, growin' like a breeze
+
+            Country roads, take me home
+            To the place I belong
+            West Virginia, mountain mama
+            Take me home, country roads
+
+            All my memories gather 'round her
+            Miner's lady, stranger to blue water
+            Dark and dusty, painted on the sky
+            Misty taste of moonshine, teardrop in my eye
+
+            Country roads, take me home
+            To the place I belong
+            West Virginia, mountain mama
+            Take me home, country roads
+
+            I hear her voice in the mornin' hour, she calls me
+            The radio reminds me of my home far away
+            Drivin' down the road, I get a feelin'
+            That I should've been home yesterday, yesterday
+
+            Country roads, take me home
+            To the place I belong
+            West Virginia, mountain mama
+            Take me home, country roads
+
+            Country roads, take me home
+            To the place I belong
+            West Virginia, mountain mama
+            Take me home, country roads
+
+            Take me home, (down) country roads
+            Take me home, (down) country roads
+
         </p>
     </div>
 
