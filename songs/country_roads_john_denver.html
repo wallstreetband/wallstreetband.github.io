@@ -15,7 +15,7 @@
             var lyric = $( "p" ).first().text();
             var rows = lyric.split("\n");
             var formatted_lyrics = "";
-            for (let i = 0; i < rows.length; ++i) {
+            for (let i = 1; i < rows.length; ++i) {
                 formatted_lyrics += rows[i].slice(numOfSpacesInEachRow) + "\n";
             }
             $("p").first().html(formatted_lyrics);
