@@ -11,20 +11,6 @@
     <script>
         $(window).on('load', function () {
 
-            var numOfSpacesInEachRow = 4*3;
-            var lyric = $( "p" ).first().text();
-            var rows = lyric.split("\n");
-            var formatted_lyrics = "";
-            for (let i = 0; i < rows.length; ++i) {
-                formatted_lyrics += rows[i].slice(numOfSpacesInEachRow) + "\n";
-            }
-            $("p").first().html(formatted_lyrics);
-
-            if ($(window).width() < 600) {       
-            } else {                              
-                $("p").css("font-size", "1vw");
-            }
-
         });
 	</script>
 </head>
